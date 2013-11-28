@@ -42,8 +42,8 @@ public class TestMapping {
         List<PathPattern<ServletAction>> list___ = map.get(key___);
 
         for (PathPattern<ServletAction> pattern___ : list___) {
-            System.out.println(pattern___.getTarget().target);
             if (pattern___.match(input)) {
+                System.out.println(pattern___.getTarget().target);
                 Map<String, String> params = new HashMap<String, String>();
                 List<String> paramsKeys = new ArrayList<String>();
                 List<String> paramsValues = new ArrayList<String>();
