@@ -21,7 +21,7 @@ package com.babyduncan.pattern;
 import java.io.IOException;
 import java.io.Reader;
 
-class PeekReader {
+public class PeekReader {
     private Reader in;
     private boolean cached = false;
     private int value;

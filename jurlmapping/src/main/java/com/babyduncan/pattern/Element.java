@@ -18,7 +18,7 @@
 
 package com.babyduncan.pattern;
 
-class Element {
+public class Element {
     public boolean match(PathInput input) {
         return false;
     }

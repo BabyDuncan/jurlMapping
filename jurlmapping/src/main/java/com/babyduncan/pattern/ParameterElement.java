@@ -23,7 +23,7 @@ import com.babyduncan.property.Property;
 
 import java.util.Map;
 
-class ParameterElement extends Element {
+public class ParameterElement extends Element {
     private int parameter = -1;
     private String properties;
     private boolean optional;

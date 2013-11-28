@@ -24,13 +24,13 @@ import java.util.List;
 
 @SuppressWarnings("unchecked")
 public final class PathInput {
-    private Object[] values;
-    private String[] items;
-    private Class[] types;
-    private int position;
-    private boolean bind = false;
-    private String remaining = "";
-    private int httpMethod = 0;
+    public Object[] values;
+    public String[] items;
+    public Class[] types;
+    public int position;
+    public boolean bind = false;
+    public String remaining = "";
+    public int httpMethod = 0;
 
     public PathInput(String text) {
         this(text, HttpMethods.GET);

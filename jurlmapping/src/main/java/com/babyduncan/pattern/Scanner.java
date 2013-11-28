@@ -20,7 +20,7 @@ package com.babyduncan.pattern;
 
 import java.io.IOException;
 
-class Scanner {
+public class Scanner {
     private enum Type {NUMBER, STRING, NAME, SYMBOL, TEXT, END}
 
     ;

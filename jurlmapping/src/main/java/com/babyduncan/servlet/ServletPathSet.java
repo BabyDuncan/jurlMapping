@@ -25,7 +25,7 @@ import com.babyduncan.pattern.PathInput;
 import com.babyduncan.pattern.PathPattern;
 
 @SuppressWarnings("unchecked")
-class ServletPathSet extends AbstractPathSet<Object, ServletAction> {
+public class ServletPathSet extends AbstractPathSet<Object, ServletAction> {
     private int defaultHttpMethods = HttpMethods.GET | HttpMethods.POST;
 
     public void setDefaultHttpMethods(int defaultHttpMethods) {

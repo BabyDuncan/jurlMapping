@@ -29,13 +29,13 @@ import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.Map;
 
-class ServletAction {
+public class ServletAction {
     public enum Type {FORWARD, REDIRECT, RELOCATE, DEPLOY}
 
     ;
 
     private Class<? extends Page> pageClass;
-    private String target;
+    public String target;
     private Type type;
 
     public ServletAction(String target, Type type) {

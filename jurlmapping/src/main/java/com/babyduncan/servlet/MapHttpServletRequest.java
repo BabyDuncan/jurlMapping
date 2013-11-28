@@ -23,9 +23,9 @@ import javax.servlet.http.HttpServletRequestWrapper;
 import java.util.*;
 
 @SuppressWarnings("unchecked")
-class MapHttpServletRequest extends HttpServletRequestWrapper {
-    private Map<String, String[]> parameters = new HashMap<String, String[]>();
-    private String requestURI = null;
+public class MapHttpServletRequest extends HttpServletRequestWrapper {
+    public Map<String, String[]> parameters = new HashMap<String, String[]>();
+    public String requestURI = null;
 
     public MapHttpServletRequest(HttpServletRequest request) {
         super(request);

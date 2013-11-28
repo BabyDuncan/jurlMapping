@@ -18,7 +18,7 @@
 
 package com.babyduncan.pattern;
 
-class StringElement extends ParameterElement {
+public class StringElement extends ParameterElement {
     @Override
     public boolean match(PathInput input) {
         if (input.end()) {

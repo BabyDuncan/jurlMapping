@@ -25,14 +25,14 @@ import java.util.Iterator;
 import java.util.List;
 
 public final class PathPattern<T> implements Comparable<PathPattern<T>> {
-    private final String SPECIAL = "$%[{(*";
+    public final String SPECIAL = "$%[{(*";
 
-    private List<Element> elements = new ArrayList<Element>();
-    private int httpMethods;
+    public List<Element> elements = new ArrayList<Element>();
+    public int httpMethods;
 
-    private String key = "";
-    private T target;
-    private boolean named = false;
+    public String key = "";
+    public T target;
+    public boolean named = false;
 
     public PathPattern(T target, String text, boolean named, int defaultHttpMethods) {
         this.target = target;
@@ -57,7 +57,7 @@ public final class PathPattern<T> implements Comparable<PathPattern<T>> {
         }
     }
 
-    private void parseAllElement(String path) throws IOException {
+    public void parseAllElement(String path) throws IOException {
         String[] items = path.split("/");
 
         boolean first = true;
@@ -81,7 +81,7 @@ public final class PathPattern<T> implements Comparable<PathPattern<T>> {
         }
     }
 
-    private Element parseElement(Scanner in) throws IOException {
+    public Element parseElement(Scanner in) throws IOException {
         in.read();
 
         if (in.isSymbol("%")) {
@@ -114,7 +114,7 @@ public final class PathPattern<T> implements Comparable<PathPattern<T>> {
         return null;
     }
 
-    private <U extends ParameterElement> U parseReference(Scanner in, U element) throws IOException {
+    public <U extends ParameterElement> U parseReference(Scanner in, U element) throws IOException {
         in.peek();
 
         if (in.isEnd()) {
