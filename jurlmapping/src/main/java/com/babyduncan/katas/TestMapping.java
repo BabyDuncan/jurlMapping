@@ -20,7 +20,7 @@ public class TestMapping {
     /**
      * 匹配模式
      * /profile/$Username/$Age -> profile.jsp
-     * /profile/aaa/bbb  ->  /profile.jsp?Username=aaa
+     * /profile/aaa/bbb  ->  /profile.jsp?Username=aaa&Age=bbb
      *
      * @param args
      */
